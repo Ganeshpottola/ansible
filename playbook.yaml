@@ -1,4 +1,4 @@
-- hosts: webserver01
+- hosts: 54.82.21.245
   become: yes
   tasks:
 
