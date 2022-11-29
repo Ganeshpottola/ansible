@@ -1,4 +1,4 @@
-- hosts: 34.230.75.253
+- hosts: all
   become: yes
   tasks:
 
@@ -28,7 +28,7 @@
     - name: Updating permission.
       command: "{{ item }}"
       with_items:
-        - chown -R tomcat:tomcat /opt/tomcat
+        - chown -R ubuntu:tomcat /opt/tomcat
         - chmod -R g+r /opt/tomcat/conf
         - chmod g+x /opt/tomcat/conf
                    
