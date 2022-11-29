@@ -28,7 +28,7 @@
     - name: Updating permission.
       command: "{{ item }}"
       with_items:
-        - chown -R ubuntu:tomcat /opt/tomcat
+        - chown -R tomcat:tomcat /opt/tomcat
         - chmod -R g+r /opt/tomcat/conf
         - chmod g+x /opt/tomcat/conf
                    
